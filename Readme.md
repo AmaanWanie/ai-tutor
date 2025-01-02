@@ -37,7 +37,7 @@ Technologies Used
 ## Setup Instructions
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo-name/backend.git
+   git clone https://github.com/ai-tutor/backend.git
 
     Navigate to the project directory:
 
