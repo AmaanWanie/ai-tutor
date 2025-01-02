@@ -1,9 +1,7 @@
-Frontend README.md
-
-# PDF QnA App - Frontend
+# PDF QnA App
 
 ## Overview
-This is the frontend of the PDF QnA application, built with React and Tailwind CSS. It allows users to upload PDFs and ask questions about their content.
+This is the PDF QnA application, built with React and Tailwind CSS. It allows users to upload PDFs and ask questions about their content.
 
 ## Features
 - Upload a PDF file.
@@ -17,11 +15,11 @@ This is the frontend of the PDF QnA application, built with React and Tailwind C
 
     Navigate to the project directory:
 
-cd frontend
+   cd frontend
 
-Install dependencies:
+   Install dependencies:
 
-npm install
+   npm install
 
 Start the development server:
 
@@ -29,30 +27,12 @@ Start the development server:
 
     Access the app at http://localhost:5173.
 
-Folder Structure
-
-    src/components/: Contains React components (AskQuestion.jsx, UploadPDF.jsx).
-    App.jsx: Main application file.
-    index.css: Tailwind CSS styles.
 
 Technologies Used
 
     React
     Tailwind CSS
     Axios
-
-
-#### **Backend README.md**
-```markdown
-# PDF QnA App - Backend
-
-## Overview
-This is the backend of the PDF QnA application, built with FastAPI. It handles PDF uploads, processes their content, and provides answers to user questions using a vector database and LLM.
-
-## Features
-- Upload PDF files.
-- Store extracted content in a database.
-- Use vector embeddings for retrieval-based Q&A.
 
 ## Setup Instructions
 1. Clone the repository:
@@ -61,28 +41,23 @@ This is the backend of the PDF QnA application, built with FastAPI. It handles P
 
     Navigate to the project directory:
 
-cd backend
+   cd backend
 
 Create a virtual environment:
-
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
+   ```
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 Install dependencies:
-
+```
 pip install -r requirements.txt
-
+```
 Start the FastAPI server:
-
+```
     uvicorn app.main:app --reload
 
     Access the API docs at http://127.0.0.1:8000/docs.
-
-Folder Structure
-
-    app/routers/: Contains route handlers (documents.py, questions.py).
-    app/services/: NLP and PDF processing logic (nlp_service.py, pdf_processor.py).
-    app/database/: Database connection and models.
+```
 
 API Endpoints
 
@@ -102,8 +77,6 @@ Technologies Used
 
 
 ---
-
-### 3. **Brief Architecture Overview**
 
 #### **Architecture Overview**
 The application consists of two main components:
